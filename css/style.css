@@ -1,0 +1,657 @@
+:root {
+    --color: rgb(117, 78, 249);
+    --backgroundcolor: rgb(251, 251, 251);
+    ;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    background: var(--backgroundcolor);
+    padding-top: 70px;
+
+}
+
+/* START NAVBAR CODE */
+
+.nav_bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    padding: 20px 0px;
+}
+
+.nav_bar i {
+    display: flex;
+    align-self: flex-start;
+    margin-right: 30px;
+    color: var(--color);
+    border: var(--color) solid 3px;
+    padding: 2px;
+    border-radius: 50%;
+
+}
+
+.nav_bar ul li {
+
+    padding-top: 1rem;
+    padding-right: 1rem !important;
+    color: black;
+}
+
+.nav_bar ul li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #8a8fa3;
+    font-weight: 500;
+    position: relative;
+    transition: all 0.3s ease-out 0s;
+}
+
+.nav_bar a:hover,
+.nav_bar a.active {
+    color: var(--color);
+
+}
+
+.shape h4 {
+    color: var(--color);
+
+}
+
+
+.nav_bar ul li a:hover::before {
+    height: 50px;
+}
+
+
+
+.nav_bar ul li a::before {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 0px;
+    background-color: var(--color);
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    transition: all 0.3s ease-out 0s;
+}
+
+/* END NAVBAR CODE */
+
+/* START SHAPE CODE */
+.shape {
+    position: relative;
+    height: 530px;
+    width: 100%;
+    padding-top: 80px;
+    background-color: beige;
+}
+
+.shape h1,
+.head .h1,
+.services .h1 {
+    font-weight: 700;
+}
+
+.shape p {
+    color: rgb(138, 143, 163);
+}
+
+.shape .button,
+.contact .button {
+    background-color: var(--color);
+    padding: 6px 46px;
+    border: transparent solid 2px;
+    border-radius: 24px;
+    color: #FFF;
+    transition: all 0.3s ease-out 0.1s;
+}
+
+.shape .button:hover,
+.contact .button:hover {
+    background-color: #FFF;
+    padding: 6px 46px;
+    border: var(--color) solid 2px;
+    border-radius: 24px;
+    color: var(--color);
+
+}
+
+.shape ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.shape .social-list {
+    position: relative;
+    top: 156px;
+    left: 38px;
+    width: 100%;
+}
+
+.shape .social-list ul li {
+    display: inline;
+}
+
+.social-list li a {
+
+    width: 40px;
+    height: 40px;
+    opacity: 0.4;
+    border: #888 solid 1px;
+    border-radius: 50%;
+    /* padding: 10px; */
+    transition: 0.5s;
+}
+
+.shape .social-list a:hover {
+    opacity: 1;
+    background-color: var(--color);
+    color: #FFF;
+}
+
+.social-list a::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--color);
+    left: -101%;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+/* End Code Shape */
+
+
+/* Start Code About */
+
+.about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.head .h1 {
+    font-weight: 900;
+}
+
+.head {
+    margin-bottom: 60px;
+
+}
+
+.about .imag {
+    margin-top: 60px;
+}
+
+
+.about img {
+    width: 70%;
+    height: 90%;
+}
+
+.about .Texts i {
+    color: var(--color);
+    margin-right: 5px;
+}
+
+
+.about .Texts span,
+.contact .box p {
+    color: #808080;
+}
+
+/* End Code About */
+
+
+/* Start Code Skills */
+
+.skills {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.progress {
+    height: 3px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.progress .progress-bar {
+
+
+    background-color: var(--color);
+    animation: progress 7s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes progress {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.prog_item {
+    position: relative;
+
+}
+
+.counter {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
+
+/* End Code Skills */
+
+/* START  Project-Mind */
+.project-mind {
+    background: url("../images/OIG4.jpg") no-repeat center fixed;
+    background-size: cover;
+    min-height: 300px
+}
+
+.project-mind .data {
+    padding-top: 30px;
+    background: rgba(117, 78, 249, 0.7);
+    min-height: 300px;
+    padding-bottom: 70px;
+    color: #fff;
+
+}
+
+.project-mind h2 {
+    font-size: 45px;
+    font-weight: 900;
+    padding: 20px 0;
+}
+
+.project-mind p {
+
+    padding-bottom: 25px;
+}
+
+
+.project-mind .data .cv {
+    background-color: #FFF;
+    padding: 8px;
+    width: 188px;
+    border: #754ef9 solid 2px;
+    border-radius: 24px;
+    color: #754ef9;
+    ;
+}
+
+.project-mind .data .cv:hover {
+    background-color: #754ef9;
+    border: var(--color) solid 2px;
+    border-radius: 24px;
+    color: #FFF;
+    transition: all 0.3s ease-out 0.1s;
+}
+
+.project-mind .data .hire {
+    background-color: transparent;
+    padding: 8px;
+    margin-left: 10px;
+    width: 188px;
+    border: #FFF solid 2px;
+    border-radius: 24px;
+    color: #FFF;
+}
+
+.project-mind .data .hire:hover {
+
+    background: rgba(255, 255, 255, 0.4);
+    padding: 8px;
+    border-radius: 24px;
+    color: #FFF;
+    transition: all 0.3s ease-out 0.1s;
+}
+
+/* End  Project-Mind */
+
+/* START Services */
+
+.services {
+    margin-top: 60px;
+}
+
+
+.box {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 6px;
+    border: 1px solid #eceff8;
+    transition: 0.5s;
+}
+
+.services .box i,
+
+.contact .box i {
+    color: #754ef9;
+    line-height: 60px;
+    font-size: 45px;
+
+}
+
+.services .box:hover,
+.contact .box:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+}
+
+/* END Services */
+
+/* Start work code */
+.work {
+    margin-top: 60px;
+    padding-top: 60px;
+
+    background-color: #FFF;
+    width: 100%;
+    height: 800px;
+}
+
+.work img {
+    position: relative;
+    margin-top: 30px;
+    width: 369px;
+    height: 253px;
+}
+
+.work .visble {
+
+    background-color: rgba(117, 78, 249, 0.7);
+
+}
+
+/* End work code */
+
+
+/* STrat contact */
+
+.contact {
+    margin-top: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+
+
+
+textarea {
+    height: 135px;
+    padding-top: 10px;
+    width: 100%;
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 0 25px;
+    font-size: 16px;
+    color: #8a8fa3;
+}
+
+.from-control:focus,
+textarea:focus {
+    border: #754ef9 solid 1px;
+    outline: none;
+}
+
+.from-control {
+    width: 100%;
+    height: 55px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 0 25px;
+    font-size: 16px;
+    color: #8a8fa3;
+
+}
+
+/* End contact code */
+
+/* Start footer */
+
+footer {
+    height: 100px;
+    background-color: #152136;
+}
+
+footer ul li i {
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #1c2940;
+
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer ul li i:hover {
+    background-color: #754ef9;
+}
+
+footer .copy_right {
+    background-color: #152136;
+    color: #fff;
+}
+
+footer .copy_right span {
+    color: #754ef9;
+}
+
+/* End footer code */
+
+/* Start preloader */
+
+.h1 {
+    padding-bottom: 20px;
+}
+
+.head hr {
+    margin-top: 15px;
+}
+
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: table;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    z-index: 99999;
+    transition: 2sc;
+}
+
+.spinner {
+    color: var(--color);
+}
+
+
+/* End preloader */
+
+
+
+#menu {
+    display: none;
+    position: relative;
+    appearance: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+}
+
+#menu span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    background-color: black;
+    border-radius: 6px;
+    transform-origin: 0 0;
+    transition: 0.4s;
+    margin-bottom: 5px;
+
+}
+
+
+.line {
+    background-color: var(--color);
+}
+
+/* scroll-top code */
+
+#scroll-top {
+    font-size: 20px;
+    color: #fff;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 46px;
+    border-radius: 50%;
+    border: 2px solid #586376;
+    background-color: #152136;
+    text-align: center;
+    z-index: 9999;
+    transition: all 0.3s ease-out 0s;
+    display: none;
+    cursor: pointer;
+}
+
+#scroll-top:hover {
+    background-color: #754ef9;
+}
+
+/* End scroll-top code */
+
+@media screen and (max-width: 600px) {
+
+
+    #menu {
+        display: block;
+        margin-left: 70%;
+
+    }
+
+
+    .nav_bar i {
+        color: var(--color);
+        border: var(--color) solid 3px;
+        padding: 6px;
+        border-radius: 50%;
+
+    }
+
+    .nav_bar ul li {
+        display: none;
+        position: fixed;
+        text-align: center;
+        top: 10%;
+        left: 10%;
+        width: 80%;
+        height: 80%;
+        background-color: #fff;
+    }
+
+
+
+    #actions.is-active {
+        display: inline-grid;
+    }
+
+    #menu.is-active span:nth-child(1) {
+        transform: translate(0px, 12px) rotate(-45deg);
+    }
+
+    #menu.is-active span:nth-child(2) {
+        opacity: 0;
+        transform: translateX(15px);
+    }
+
+    #menu.is-active span:nth-child(3) {
+        transform: translate(3px, -28px) rotate(45deg);
+    }
+
+    #menu.is-active span {
+        background-color: black;
+    }
+
+
+    nav {
+        /* background-color: var(--background); */
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 82px;
+        z-index: 100;
+    }
+
+
+
+}
+
+
+.img {
+    background-color: beige;
+    width: 100%;
+    height: 730px;
+
+}
+
+.img .triangle {
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: repeating-linear-gradient(0deg,
+            #808080 0,
+            #808080 2px,
+            transparent 2px,
+            transparent 4px);
+}
+
+
+
+.img #triangle2 {
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    border-left: 50px dashed transparent;
+    border-right: 50px dashed transparent;
+    border-top: 100px dashed #000;
+}
+
+.img .triangle3 {
+    margin: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: black solid 6px;
+}
