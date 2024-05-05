@@ -1,6 +1,5 @@
 
-
-
+$(function () {
     const menu = document.getElementById('menu');
     const actions = document.getElementById('actions');
 
@@ -13,3 +12,6 @@
         actions.classList.toggle("is-active");
 
     }
+});
+
+

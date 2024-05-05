@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="">
@@ -14,23 +16,23 @@
 </head>
 
 <body>
-
+    <!-- 
     <div class="preloader  d-flex justify-content-center align-items-center">
         <div class="spinner-border spinner" role="status">
         </div>
-    </div>
+    </div> -->
 
     <!-- NAV BAR -->
     <nav class="nav_bar fixed-top">
 
-        <h2 class=""><i class="lni lni-user"></i></h2>
+        <h4 class="logo"><i class="lni lni-user"></i></h4>
         <ul class="list-unstyled  d-flex justify-content-center align-items-center" id="actions">
             <li><a href="#home" class="active nav_link">home</a></li>
             <li><a href="#about" class=" nav_link">about</a></li>
             <li><a href="#skills" class=" nav_link">skills</a></li>
-            <li><a href="#service" class=" nav_link">service</a></li>
+            <li><a href="#service" class=" nav_link">services</a></li>
             <li><a href="#work" class=" nav_link">work</a></li>
-            <li><a href="#contact" class=" nav_link">contact us</a></li>
+            <li><a href="#contact" class=" nav_link">contact</a></li>
         </ul>
 
         <button id="menu">
@@ -45,27 +47,28 @@
     <!-- Start Shape Section -->
     <section id="home" class="shape">
 
-        <div class="container text-center py-5">
+        <div class="container text-center py-7">
 
+            <!-- <div class="row justify-content-center align-items-center"> -->
             <h4>HELLO,I'M</h4>
 
             <h1 class="text-bold">Ali BARAKAT</h1>
 
             <p>back-end web-developer</p>
 
-            <button class="button main-btn">view my work</button>
-        </div>
+            <a class="button">VIEW MY WORK</a>
+            <!-- </div> -->
 
-        <div class="container">
-            <div class="row">
-                <div class="social-list col-sm-12">
-                    <ul class="list-unstyled">
-                        <li><a href=""><i class="lni lni-facebook"></i></a></li>
-                        <li><a href=""><i class="lni lni-github"></i></a></li>
-                        <li><a href=""><i class="lni lni-whatsapp"></i></a></li>
-                        <li><a href=""><i class="lni lni-google"></i></a></li>
-                        <li><a href=""><i class="lni lni-linkedin-original"></i></a></li>
+            <div class="row justify-content-center">
+                <div class="col-sm-12">
+                    <ul class="social-list list-unstyled">
+                        <li><a class="lni lni-facebook-fill" href=""> </a></li>
+                        <li><a class="lni lni-github" href=""></a></li>
+                        <li><a class="lni lni-whatsapp" href=""></a></li>
+                        <li><a class="lni lni-google" href=""></a></li>
+                        <li><a class="lni lni-linkedin-original" href=""></a></li>
                     </ul>
+
                 </div>
             </div>
         </div>
@@ -76,7 +79,7 @@
     <!-- Start About Section -->
     <section id="about" class="about">
 
-        <div class="container">
+        <div class="container mx-auto">
 
             <div class="head">
 
@@ -85,14 +88,19 @@
 
             </div>
 
-            <div class="row ">
+            <div class="row carsd" >
+
+
                 <!-- Image -->
-                <div class="col-sm-6  col-md-5 mx-auto">
-                    <img src="images/IMG-20220422-WA0004.jpg" alt="" />
+                <div class="col-sm-12 col-md-6">
+                    <div class="bg-image">
+                        <img src="images/IMG-20220422-WA0004.jpg" alt="" />
+                    </div>
+
                 </div>
 
                 <!-- Texts -->
-                <div class="col-md-6  col-sm-6 Texts">
+                <div class="col-md-6 col-sm-12 texts">
 
                     <!-- Text 1 -->
 
@@ -260,53 +268,57 @@
     <!--START project-mind  Section -->
 
     <section class="project-mind  text-center">
+
         <div class="data">
+
+
             <h2>Have any project on mind</h2>
             <p>I am ready to work at any time</p>
             <button class="cv">Download Cv</button>
             <button class="hire">HIRE ME</button>
+        </div>
+
         </div>
     </section>
     <!-- End  project-mind Section -->
 
     <!--START services Section -->
     <section class="services" id="service">
-        <div class="container  text-center">
+        <div class="container   text-center">
 
             <div class="head">
                 <h2 class="h1">Services</h2>
                 <hr width="50%" class="mx-auto">
             </div>
 
-            <div class="row">
+            <div class="row carsd  justify-content-center">
 
-                <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="col-lg-4 col-md-6 col-xs-12">
                     <div class="box mb-3">
-                        <i class="lni lni-seo "></i>
-                        <h5>Web Development</h5>
+                        <i class="lni lni-seo "></i><br>
+                        <a href="">Web Development</a>
 
                         <p class="d-block mx-auto">If you have a website, we will do a better and coordinated
                             development on it.</p>
                     </div>
                 </div>
 
-                <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="col-lg-4 col-md-6 col-xs-12">
                     <div class="box mb-3">
-                        <i class="lni lni-code-alt"></i>
-                        <h5>Web Design</h5>
+                        <i class="lni lni-code-alt"></i><br>
+                        <a href="">Web Design</a>
                         <p class="d-block mx-auto">Design sites that are compatible with all smart devices, this feature
                             provides a great customer experience</p>
                     </div>
                 </div>
 
-                <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="col-lg-4 col-md-6 col-xs-12">
                     <div class="box mb-3">
-                        <i class="lni lni-support"></i>
-                        <h5>Consultancy and Support</h5>
+                        <i class="lni lni-support"></i><br>
+                        <a href="">Consultancy and Support</a>
 
                         <p class="d-block mx-auto">I am ready to provide support at any time and solve your website
-                            problems. Feel free to contact me.
-                            provides a great customer experience</p>
+                            problems. Feel free to contact me.</p>
                     </div>
                 </div>
 
@@ -329,12 +341,7 @@
                 <div class="col-md-6 col-sm-7">
                     <img src="images/boot _strap _page.jpg" alt="">
                 </div>
-                <!-- <div class="col-md-6 col-sm-7">
-                    <img src="images/boot _strap _page.jpg" alt="">
-                </div>
-                <div class="col-md-6 mb-9 col-sm-7">
-                    <img src="images/boot _strap _page.jpg" alt="">
-                </div> -->
+
             </div>
         </div>
 
@@ -354,7 +361,7 @@
                 <hr width="50%" class="mx-auto">
             </div>
 
-            <div class="row justify-content-center">
+            <div class="row carsd justify-content-center">
 
                 <div class="col-md-4 col-sm-5 col-xs-7">
                     <div class="box">
@@ -388,7 +395,7 @@
                 </form>
 
             </div>
-            <button class="button main-btn">Send Massege</button>
+            <a href="" class="button main-btn">Send Massege</a>
     </section>
 
     <!--End Contact Section -->
