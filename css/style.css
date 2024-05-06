@@ -522,6 +522,7 @@ textarea:focus {
 /* Start footer */
 
 footer {
+    margin-top: 50px;
     height: 100px;
     background-color: #152136;
 }
