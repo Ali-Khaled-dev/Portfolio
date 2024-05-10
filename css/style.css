@@ -721,12 +721,6 @@ footer .copy_right span {
 @media screen and (max-width: 767px) {
 
 
-    .logo {
-        position: absolute;
-        left: 10%;
-    }
-
-
 
     #menu {
         display: block;
@@ -795,13 +789,13 @@ footer .copy_right span {
         margin-bottom: 20px;
     }
 
-    .card {
+    /* . {
         background-color: #fff;
         border-radius: 6px;
         border: 1px solid #eceff8;
         transition: 0.5s;
         margin: 25px;
-    }
+    } */
 
 }
 
