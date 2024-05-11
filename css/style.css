@@ -11,9 +11,8 @@
 
 body {
     background: #fbfbfb;
-    /* padding-top: 70px; */
-    /* height: 10000px; */
     font-family: "Poppins", sans-serif;
+    height: 1000px;
 
 }
 
@@ -21,6 +20,7 @@ body {
     padding-top: 6rem !important;
     padding-bottom: 3rem !important;
 }
+
 
 a {
     text-decoration: none;
@@ -36,10 +36,6 @@ a {
 
 
 /* START NAVBAR CODE */
-.logo {
-    position: absolute;
-    left: 27%;
-}
 
 .nav_bar {
     height: 80px;
@@ -111,6 +107,7 @@ a {
 }
 
 .shape h4 {
+    margin-top: 51px;
     color: var(--color);
     font-weight: bold;
 }
@@ -160,7 +157,7 @@ a {
     display: flex;
     flex-direction: row;
     position: absolute;
-    bottom: -31px;
+    bottom: -26px;
     left: 27%;
     width: 70%;
 }
@@ -257,20 +254,21 @@ a {
 }
 
 
-
 .about .texts i {
     color: var(--color);
     margin-right: 10px;
+
 }
 
 
-.about .Texts span,
+.about .texts span,
 .contact .card p {
     color: #808080;
 }
 
 
 /* End Code About */
+
 
 
 /* Start Code Skills */
@@ -401,7 +399,7 @@ a {
 }
 
 .services .card a {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     color: #32333c;
     margin-bottom: 20px;
@@ -410,7 +408,7 @@ a {
 
 
 .services .card p {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 20px;
     padding-bottom: 10px;
     color: #888;
@@ -619,6 +617,7 @@ footer ul li i:hover {
 }
 
 footer .copy_right {
+    border-top: #ddd solid 1px;
     background-color: #1c2940;
     color: #fff;
     padding-top: 10px;
@@ -721,6 +720,10 @@ footer .copy_right span {
 @media screen and (max-width: 767px) {
 
 
+    .shape {
+
+        width: 100%;
+    }
 
     #menu {
         display: block;
@@ -783,10 +786,15 @@ footer .copy_right span {
         z-index: 100;
     }
 
-
     .bg-image {
-        margin-left: 10%;
-        margin-bottom: 20px;
+        margin-left: -1%;
+        margin-bottom: 39px;
+        width: 70%;
+    }
+
+    .bg-image img {
+
+        margin: 30px;
     }
 
     /* . {
@@ -797,13 +805,50 @@ footer .copy_right span {
         margin: 25px;
     } */
 
+    .work {
+
+        width: 100%;
+        height: 1100px;
+
+    }
+
+    .work a {
+        margin-top: 30px;
+        margin-left: 30%;
+    }
+
+    .work-images {
+        height: 241px;
+        margin-left: 0%;
+        margin-right: 0%;
+
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .bg-image {
+        margin-left: 20%;
+    }
+
+    .work {
+        width: 100%;
+        height: 892px;
+    }
+
 }
 
 @media screen and (max-width: 970px) {
 
     .bg-image {
-        margin-left: 10%;
-        margin-bottom: 20px;
+        margin-left: -2%;
+        width: 100%;
+    }
+
+    .work {
+
+        width: 100%;
+        height: 1000px;
+
     }
 
     .card {
@@ -817,12 +862,18 @@ footer .copy_right span {
         margin-bottom: 20px;
     }
 
+    .services .card i {
+        font-size: 60px;
+        color: #754ef9;
+        line-height: 56px;
+    }
+
     .services .card a {
-        font-size: 13px;
+        font-size: 19px;
     }
 
     .services .card p {
-        font-size: 12px;
+        font-size: 16px;
         font-weight: 20px;
         margin-bottom: 16px;
         color: #888;
