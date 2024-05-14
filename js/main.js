@@ -17,7 +17,7 @@ $(function () {
 
         $('html, body').animate({
 
-            scrollTop: $('#' + $(this).data('scroll')).offset().top + 5
+            scrollTop: $('#' + $(this).data('scroll')).offset().top
         }, 100);
     });
 
@@ -93,11 +93,7 @@ $(function () {
     });
 
 
-    $('#overlay').hover(function () {
-        $(this);
-    }, function () {
-        $(this).fadeOut();
-    })
+
 
     $('.show-popup').click(function () {
         $('.poupup').fadeIn();
@@ -106,5 +102,23 @@ $(function () {
         $('.poupup').fadeOut();
     })
 
+    function hundlemenue() {
+        $("#menu").toggleClass("is-active");
+        $("#actions").toggleClass("is-active");
+    }
+    $("#menu").click(function () {
+        hundlemenue();
+    });
+
+
+    // $('.work-images .overlay').hover(function () {
+    //     $(this).turnOnOverlay();
+    // }, function () {
+    //     $(this).turnOffOverlay();
+    // })
 
 });
+
+
+
+
