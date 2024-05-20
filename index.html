@@ -1,280 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="">
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="" />
 
     <title>Protofoli & CV</title>
+  </head>
 
-</head>
-
-<body>
-
+  <body>
+    <!-- 
     <div class="preloader  d-flex justify-content-center align-items-center">
         <div class="spinner-border spinner" role="status">
         </div>
-    </div>
-
+    </div> -->
 
     <!-- NAV BAR -->
-    <nav class="nav_bar fixed-top ">
+    <nav class="nav_bar fixed-top bg-light py-4 py-md-4 py-lg-4">
+      <ul class="list-unstyled" id="actions">
+        <li><a href="#" data-scroll="home" class="active">home</a></li>
+        <li><a href="#" data-scroll="about">about</a></li>
+        <li><a href="#" data-scroll="skills">skills</a></li>
+        <li><a href="#" data-scroll="service">services</a></li>
+        <li><a href="#" data-scroll="work">work</a></li>
+        <li><a href="#" data-scroll="contact">contact</a></li>
+      </ul>
 
-        <ul class="list-unstyled" id="actions">
-            <li><a href="#" data-scroll="home" class="active">home</a></li>
-            <li><a href="#" data-scroll="about">about</a></li>
-            <li><a href="#" data-scroll="skills">skills</a></li>
-            <li><a href="#" data-scroll="service">services</a></li>
-            <li><a href="#" data-scroll="work">work</a></li>
-            <li><a href="#" data-scroll="contact">contact</a></li>
-        </ul>
-        <button id="menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-
+      <button id="menu" class="my-2">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </nav>
     <!-- END  NAV BAR -->
 
     <!-- Start Shape Section -->
     <section id="home" class="shape block">
+      <div class="container text-center py-4 my-4">
+        <h4 class="text-bold pt-5">HELLO,I'M</h4>
 
-        <div class="container text-center py-7">
+        <h1 class="text-bold">Ali BARAKAT</h1>
 
-            <h4>HELLO,I'M</h4>
+        <p class="mb-4">back-end web-developer</p>
 
-            <h1 class="text-bold">Ali BARAKAT</h1>
+        <a href="#work" class="button">VIEW MY WORK</a>
 
-            <p>back-end web-developer</p>
-
-            <a href="#work" class="button">VIEW MY WORK</a>
-
-            <div class="row justify-content-center">
-                <div class="col-sm-12">
-                    <ul class="social-list list-unstyled">
-                        <li><a class="lni lni-facebook-fill" target="_blank"
-                                href="https://www.facebook.com/profile.php?id=100008101291739"></a></li>
-                        <li><a target="_blank" class="lni lni-github" href="https://github.com/Ali-Khaled-dev"></a></li>
-                        <li><a target="_blank" class="lni lni-whatsapp" href="https://wa.me/963943691731"></a>
-                        </li>
-                        <li><a class="lni lni-google" href="mailto:ali.khaled.dev@gmail.com"></a></li>
-                        <li><a target="_blank" class="lni lni-linkedin-original"
-                                href="https://www.linkedin.com/in/ali-barakat-4b41a9209"></a></li>
-                    </ul>
-                </div>
-            </div>
+        <div class="row justify-content-center">
+          <div class="col-sm-12">
+            <ul class="social-list list-unstyled">
+              <li>
+                <a
+                  class="lni lni-facebook-fill"
+                  target="_blank"
+                  href="https://www.facebook.com/profile.php?id=100008101291739"
+                ></a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  class="lni lni-github"
+                  href="https://github.com/Ali-Khaled-dev"
+                ></a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  class="lni lni-whatsapp"
+                  href="https://wa.me/963943691731"
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="lni lni-google"
+                  href="mailto:ali.khaled.dev@gmail.com"
+                ></a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  class="lni lni-linkedin-original"
+                  href="https://www.linkedin.com/in/ali-barakat-4b41a9209"
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
-
+      </div>
     </section>
     <!-- End Shape Section -->
-
 
     <!-- Start About Section -->
 
     <section id="about" class="about block">
-
-        <div class="container">
-
-            <div class="head">
-                <h2 class="h1 text-center">About Me</h2>
-                <hr class="mx-auto">
-            </div>
-
-            <div class="row justify-content-center justify-items-space-between">
-
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="bg-image">
-                        <img src="images/IMG-20220422-WA0004.jpg" alt="my photo" />
-                    </div>
-
-                </div>
-
-
-                <div class="texts col-lg-6 col-md-6 col-sm-12 justify-content-space-between ">
-                    <div>
-                        <h5>Hi There! I'm Ali</h5>
-                        <p>back-end web-developer</p>
-                        <hr class="col-md-10">
-                    </div>
-
-                    <div class=" row justify-items-space-between ">
-                        <div class="col-lg-6 col-md-12">
-                            <p> <i class="lni lni-user "></i><span>Nick name:</span> Ali Barakat</p>
-                        </div>
-
-                        <div class="col-lg-6 col-md-12">
-                            <p><i class="lni lni-calendar"></i><span>start date to learn:</span>Jun 2023</p>
-                        </div>
-                        <hr class=" col-md-10">
-                    </div>
-
-
-
-                    <div class="row justify-items-space-between">
-
-                        <div class="col-lg-6 col-md-12">
-                            <p><i class="lni lni-calendar"></i><span>Date of birth:</span>7 Agust 1995</p>
-                        </div>
-
-                        <div class="col-lg-6 col-md-12">
-                            <p><i class="lni lni-map-marker"></i><span>Location:</span>Syria, Aleppo</p>
-                        </div>
-
-                        <hr class="col-md-10">
-
-                    </div>
-
-                    <div class="row justify-items-space-between">
-
-                        <div class="col-lg-6 col-md-12">
-                            <p><i class="lni lni-calendar"></i> <span>Work hours:</span>At a time</p>
-                        </div>
-
-                        <div class="col-lg-6 col-md-12 ">
-                            <p><i class="lni lni-map-marker"></i><span>Type of work:</span>Remotele</p>
-                        </div>
-
-                        <hr class="col-md-10">
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="head mb-5 pb-1">
+          <h2 class="h1 text-center pb-4">About Me</h2>
+          <hr class="mx-auto" />
         </div>
+
+        <div class="row justify-content-center justify-items-space-between">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="bg-image">
+              <img
+                class="p-3"
+                src="images/IMG-20220422-WA0004.jpg"
+                alt="my photo"
+              />
+            </div>
+          </div>
+
+          <div
+            class="texts col-lg-6 col-md-6 col-sm-12 justify-content-space-between"
+          >
+            <div>
+              <h5>Hi There! I'm Ali</h5>
+              <p>back-end web-developer</p>
+              <hr class="col-md-10" />
+            </div>
+
+            <div class="row justify-items-space-between">
+              <div class="col-lg-6 col-md-12">
+                <p>
+                  <i class="lni lni-user"></i><span>Nick name:</span> Ali
+                  Barakat
+                </p>
+              </div>
+
+              <div class="col-lg-6 col-md-12">
+                <p>
+                  <i class="lni lni-calendar"></i
+                  ><span>start date to learn:</span>Jun 2023
+                </p>
+              </div>
+              <hr class="col-md-10" />
+            </div>
+
+            <div class="row justify-items-space-between">
+              <div class="col-lg-6 col-md-12">
+                <p>
+                  <i class="lni lni-calendar"></i><span>Date of birth:</span>7
+                  Agust 1995
+                </p>
+              </div>
+
+              <div class="col-lg-6 col-md-12">
+                <p>
+                  <i class="lni lni-map-marker"></i><span>Location:</span>Syria,
+                  Aleppo
+                </p>
+              </div>
+
+              <hr class="col-md-10" />
+            </div>
+
+            <div class="row justify-items-space-between">
+              <div class="col-lg-6 col-md-12">
+                <p>
+                  <i class="lni lni-calendar"></i> <span>Work hours:</span>At a
+                  time
+                </p>
+              </div>
+
+              <div class="col-lg-6 col-md-12">
+                <p>
+                  <i class="lni lni-map-marker"></i
+                  ><span>Type of work:</span>Remotele
+                </p>
+              </div>
+
+              <hr />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!--  End About Section -->
 
-
-
-
     <!-- START  Skills Section -->
 
     <section id="skills" class="skills block">
+      <div class="container">
+        <div class="head mb-5 pb-1">
+          <h2 class="h1 text-center pb-4">Skills</h2>
 
-        <div class="container">
-
-            <div class="head">
-
-                <h2 class="h1 text-center">Skills</h2>
-
-                <hr class="mx-auto">
-            </div>
-
-            <div class="nums row justify-content-center">
-
-
-                <div class="col-lg-5  col-md-5 col-xs-5">
-                    <div class="prog_item">
-                        <span> HTML5</span>
-                        <div class="counter"> <span class="num" data-width="90">0</span>%</div>
-
-                        <div class="progress">
-
-                            <div class="progress-bar progress-bar" role="progressbar" aria-valuenow="90"
-                                data-width="90">
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="prog_item">
-                        <span>Css3</span>
-                        <div class="counter"> <span class="num" data-width="90">0</span>%</div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar" role="progressbar" aria-valuenow="90"
-                                data-width="90">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="prog_item">
-
-                        <span> Bootstrap</span>
-
-                        <div class="counter">
-                            <span class="num" data-width="60">0</span>%
-                        </div>
-
-                        <div class="progress">
-                            <div class="progress-bar progress-bar" role="progressbar" aria-valuenow="60"
-                                data-width="60">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="col-lg-5  col-md-5 col-xs-5">
-
-                    <div class="prog_item">
-                        <span> Ajax</span>
-                        <div class="counter"> <span class="num" data-width="70">0</span>%</div>
-
-                        <div class="progress">
-                            <div class="progress-bar active " role="progressbar" aria-valuenow="70" data-width="70">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="prog_item">
-                        <span> Object-Oriented-Programming</span>
-                        <div class="counter"><span class="num" data-width="70">0</span>%</div>
-
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="70" data-width="70">
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="prog_item">
-                        <span>PHP/Laravel Framework</span>
-                        <div class="counter"> <span class="num" data-width="70">0</span>%</div>
-
-                        <div class="progress">
-                            <div class="progress-bar  active " role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                aria-valuemax="100" data-width="70">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <hr class="mx-auto"/>
         </div>
+
+        <div class="nums row justify-content-center">
+          <div class="col-lg-5 col-md-5 col-xs-5">
+            <div class="prog_item">
+              <span> HTML5</span>
+              <div class="counter">
+                <span class="num" data-width="90">0</span>%
+              </div>
+
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar"
+                  role="progressbar"
+                  aria-valuenow="90"
+                  data-width="90"
+                ></div>
+              </div>
+            </div>
+
+            <div class="prog_item">
+              <span>Css3</span>
+              <div class="counter">
+                <span class="num" data-width="90">0</span>%
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar"
+                  role="progressbar"
+                  aria-valuenow="90"
+                  data-width="90"
+                ></div>
+              </div>
+            </div>
+
+            <div class="prog_item">
+              <span> Bootstrap</span>
+
+              <div class="counter">
+                <span class="num" data-width="60">0</span>%
+              </div>
+
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar"
+                  role="progressbar"
+                  aria-valuenow="60"
+                  data-width="60"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-5 col-xs-5">
+            <div class="prog_item">
+              <span> Ajax</span>
+              <div class="counter">
+                <span class="num" data-width="70">0</span>%
+              </div>
+
+              <div class="progress">
+                <div
+                  class="progress-bar active"
+                  role="progressbar"
+                  aria-valuenow="70"
+                  data-width="70"
+                ></div>
+              </div>
+            </div>
+
+            <div class="prog_item">
+              <span> Object-Oriented-Programming</span>
+              <div class="counter">
+                <span class="num" data-width="70">0</span>%
+              </div>
+
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="70"
+                  data-width="70"
+                ></div>
+              </div>
+            </div>
+
+            <div class="prog_item">
+              <span>PHP/Laravel Framework</span>
+              <div class="counter">
+                <span class="num" data-width="70">0</span>%
+              </div>
+
+              <div class="progress">
+                <div
+                  class="progress-bar active"
+                  role="progressbar"
+                  aria-valuenow="70"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  data-width="70"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- End  Skills Section -->
 
-
     <!--START project-mind  Section -->
 
-    <section class="project-mind ">
-        <div class="data">
-            <div class="container  text-center">
-                <div class="row justify-content-center mt-3">
-
-                    <h2>Have any project on mind</h2>
-                    <p>I am ready to work at any time</p>
-                    <ul class="list-unstyled ">
-                        <li class="cv"> <a download="ali-barakat.pdf"
-                                href="https://drive.google.com/uc?export=download&id=1Qu_5TfIiJABgOFefHRUFSC8ed2AYoTpi">DownloadCv</a>
-                        </li>
-                        <li class="hire"><a target="_blank"
-                                href="https://www.linkedin.com/in/ali-barakat-4b41a9209">HIRE ME</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <section class="project-mind">
+      <div class="data">
+        <div class="container text-center">
+          <div class="row mt-3">
+            <h2>Have any project on mind</h2>
+            <p>I am ready to work at any time</p>
+            <ul class="list-unstyled">
+              <li class="cv">
+                <a
+                  download="ali-barakat.pdf"
+                  href="https://drive.google.com/uc?export=download&id=1Qu_5TfIiJABgOFefHRUFSC8ed2AYoTpi"
+                  >DownloadCv</a
+                >
+              </li>
+              <li class="hire">
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/ali-barakat-4b41a9209"
+                  >HIRE ME</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        </div>
+      </div>
     </section>
 
     <!-- End  project-mind Section -->
@@ -282,243 +334,265 @@
     <!--START services Section -->
 
     <section id="service" class="services block">
-        <div class="container   text-center">
-
-            <div class="head">
-                <h2 class="h1">Services</h2>
-                <hr class="mx-auto">
-            </div>
-
-            <div class="row justify-content-center">
-
-                <div class="col-lg-4 col-md-6 col-sm-8">
-                    <div class="card">
-                        <i class="lni lni-seo"></i><br>
-                        <a href="">Web Development</a>
-
-                        <p class="d-block mx-auto">If you have a website, we will do a better and coordinated
-                            development on it.</p>
-
-                    </div>
-                </div>
-
-
-                <div class="col-lg-4 col-md-6 col-sm-8">
-                    <div class="card">
-                        <i class="lni lni-code-alt"></i><br>
-                        <a href="">Web Design</a>
-                        <p class="d-block mx-auto">Design sites that are compatible with all smart devices, this feature
-                            provides a great customer experience</p>
-
-                    </div>
-                </div>
-
-
-                <div class="col-lg-4 col-md-6 col-sm-8">
-                    <div class="card">
-
-                        <i class="lni lni-support"></i><br>
-                        <a href="">Consultancy and Support</a>
-
-                        <p class="d-block mx-auto">I am ready to provide support at any time and solve your website
-                            problems. Feel free to contact me.</p>
-
-                    </div>
-                </div>
-
-
-            </div>
+      <div class="container text-center">
+        <div class="head mb-5 pb-1">
+          <h2 class="h1 pb-4">Services</h2>
+          <hr class="mx-auto" />
         </div>
-    </section>
 
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6 col-sm-8">
+            <div class="card">
+              <i class="lni lni-seo"></i><br />
+              <a class="mb-4" href="">Web Development</a>
+
+              <p class="d-block mx-auto mb-2">
+                If you have a website, we will do a better and coordinated
+                development on it.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-8">
+            <div class="card">
+              <i class="lni lni-code-alt"></i><br />
+              <a class="mb-4" href="">Web Design</a>
+              <p class="d-block mx-auto mb-2">
+                Design sites that are compatible with all smart devices, this
+                feature provides a great customer experience
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-8">
+            <div class="card">
+              <i class="lni lni-support"></i><br />
+              <a class="mb-4" href="">Consultancy and Support</a>
+
+              <p class="d-block mx-auto mb-2">
+                I am ready to provide support at any time and solve your website
+                problems. Feel free to contact me.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!--End services Section -->
 
     <!--START Work Section -->
 
     <section id="work" class="work block">
-        <div class="container text-center">
-            <div class="row">
-                <div class="head">
-                    <h2 class="h1">Work</h2>
-                    <hr class="mx-auto">
-                </div>
-            </div>
-
-            <div class="row">
-
-                <div class="col-lg-6 col-md-6 col-xs-10">
-                    <div class="work-images">
-                        <img src="images/work/boot_simple.jpg" alt="">
-
-                        <div class="overlay">
-                            <div class="content">
-                                <h3>Boot simple</h3>
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <a class="image-popup" href="images/work/boot_simple.jpg">
-                                            <i class="lni lni-circle-plus"></i></a>
-                                    </li>
-                                    <li><a href="https://github.com/Ali-Khaled-dev"><i class="lni lni-link"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="col-lg-6 col-md-6 col-xs-10">
-                    <div class="work-images">
-                        <img src="images/work/bootstrap2.png" alt="">
-
-
-                        <div class="overlay">
-                            <div class="content">
-                                <h3>Boot simple</h3>
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <a class="image-popup" href="images/work/bootstrap2.png">
-                                            <i class="lni lni-circle-plus"></i></a>
-
-                                    </li>
-                                    <li><a href="https://github.com/Ali-Khaled-dev"><i class="lni lni-link"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-6 col-md-6 col-xs-10">
-                    <div class="work-images">
-                        <img src="images/work/laravel-filament.png" alt="">
-
-
-                        <div class="overlay">
-                            <div class="content">
-                                <h3>Laravel filament</h3>
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <a class="image-popup" href="images/work/laravel-filament.png">
-                                            <i class="lni lni-circle-plus"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://github.com/Ali-Khaled-dev"><i class="lni lni-link"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-            <div class="row justify-content-center align-items-center">
-                <a class="a" href="https://github.com/Ali-Khaled-dev">more works</a>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="head text-center mb-5 pb-1">
+            <h2 class="h1 pb-4">Work</h2>
+            <hr class="mx-auto" />
+          </div>
         </div>
 
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-6 col-xs-10">
+            <div class="work-images">
+              <img src="images/work/boot_simple.jpg" alt="" />
 
+              <div class="overlay">
+                <div class="content text-center">
+                  <h3 class="text-light p-3">Boot simple</h3>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="image-popup" href="images/work/boot_simple.jpg">
+                        <i>+</i></a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://github.com/Ali-Khaled-dev"
+                        ><i class="lni lni-link"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="col-lg-6 col-md-6 col-xs-10">
+            <div class="work-images">
+              <img src="images/work/bootstrap2.png" alt="" />
+
+              <div class="overlay">
+                <div class="content text-center">
+                  <h3 class="text-light p-3">Boot Strap</h3>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="image-popup" href="images/work/bootstrap2.png">
+                        <i>+</i></a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://github.com/Ali-Khaled-dev"
+                        ><i class="lni lni-link"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-xs-10">
+            <div class="work-images">
+              <img src="images/work/laravel-filament.png" alt="" />
+
+              <div class="overlay">
+                <div class="content text-center">
+                  <h3 class="text-light p-3">Laravel filament</h3>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a
+                        class="image-popup"
+                        href="images/work/laravel-filament.png"
+                      >
+                        <i class="">+</i></a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://github.com/Ali-Khaled-dev"
+                        ><i class="lni lni-link"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+          <a class="a" href="https://github.com/Ali-Khaled-dev">more works</a>
+        </div>
+      </div>
     </section>
 
     <!--End Work Section -->
 
-
     <!--START Contact Section -->
 
     <section class="contact block" id="contact">
+      <div class="container text-center">
+        <div class="head mb-5 pb-1">
+          <h3 class="h1 pb-4">Contact</h3>
+          <hr class="mx-auto" />
+        </div>
 
-        <div class="container text-center">
-
-            <div class="head">
-                <h3 class="h1">Contact</h3>
-                <hr class="mx-auto">
-            </div>
-
+        <div class="row justify-content-center">
+          <div class="col-md-9">
             <div class="row justify-content-center">
-
-                <div class="col-md-9">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-4 col-md-6 col-xs-7">
-                            <div class="card text-center">
-                                <i class="lni lni-map-marker "></i>
-                                <h4 class="pt-2">Address</h4>
-                                <p>Syria, Aleppo</p>
-
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-xs-7">
-                            <div class="card text-center">
-                                <i class="lni lni-phone"></i>
-                                <h4 class="pt-2">Phone</h4>
-                                <p>+963 943 691 731</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-xs-7">
-                            <div class="card text-center">
-                                <i class="lni lni-envelope"></i>
-                                <h4 class="pt-2">Email</h4>
-                                <p>ali.khaled.dev@gmail.com</p>
-                            </div>
-                        </div>
-                        <form action="https://formsubmit.co/abara4529@gmail.com" method="post">
-
-                            <input type="hidden" name="_subject" value="New submission!">
-                            <input type="text" name="name" class="from-control  mb-3 mt-3" placeholder="Name" required>
-                            <input type="text" class="from-control  mb-3" name="email" placeholder="Email" required>
-                            <textarea name="text" cols="30" rows="10" name="Massege" class=" mb-3" placeholder="Massege"
-                                required></textarea>
-                            <button type="submit" class="button main-btn">Send Massege</button>
-
-                        </form>
-
-                    </div>
-
+              <div class="col-lg-4 col-md-6 col-xs-7">
+                <div class="card text-center">
+                  <i class="lni lni-map-marker"></i>
+                  <h4 class="pt-2">Address</h4>
+                  <p>Syria, Aleppo</p>
                 </div>
+              </div>
 
+              <div class="col-lg-4 col-md-6 col-xs-7">
+                <div class="card text-center">
+                  <i class="lni lni-phone"></i>
+                  <h4 class="pt-2">Phone</h4>
+                  <p>+963 943 691 731</p>
+                </div>
+              </div>
 
+              <div class="col-lg-4 col-md-6 col-xs-7">
+                <div class="card text-center">
+                  <i class="lni lni-envelope"></i>
+                  <h4 class="pt-2">Email</h4>
+                  <p>ali.khaled.dev@gmail.com</p>
+                </div>
+              </div>
+              <form
+                action="https://formsubmit.co/abara4529@gmail.com"
+                method="post"
+              >
+                <input type="hidden" name="_subject" value="New submission!" />
+                <input
+                  type="text"
+                  name="name"
+                  class="from-control mb-3 mt-3"
+                  placeholder="Name"
+                  required
+                />
+                <input
+                  type="text"
+                  class="from-control mb-3"
+                  name="email"
+                  placeholder="Email"
+                  required
+                />
+                <textarea
+                  name="text"
+                  cols="30"
+                  rows="5"
+                  name="Massege"
+                  class="mb-3"
+                  placeholder="Massege"
+                  required
+                ></textarea>
+                <button type="submit" class="button main-btn">
+                  Send Massege
+                </button>
+              </form>
             </div>
-
+          </div>
+        </div>
+      </div>
     </section>
 
     <!--End Contact Section -->
 
     <footer>
-        <div class="container">
-            <div class="row text-center">
-                <ul class="list-unstyled d-flex justify-content-center align-items-center">
-                    <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100008101291739"><i
-                                class="lni lni-facebook"></i></a></li>
-                    <li><a href="https://github.com/Ali-Khaled-dev"><i class="lni lni-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/ali-barakat-4b41a9209"><i
-                                class="lni lni-linkedin-original"></i></a></li>
-                </ul>
-            </div>
+      <div class="container mt-2">
+        <div class="row text-center">
+          <ul
+            class="mt-4 list-unstyled d-flex justify-content-center align-items-center"
+          >
+            <li>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=100008101291739"
+                ><i class="lni lni-facebook py-3"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/Ali-Khaled-dev"
+                ><i class="lni lni-github py-3"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/ali-barakat-4b41a9209"
+                ><i class="lni lni-linkedin-original py-3"></i
+              ></a>
+            </li>
+          </ul>
         </div>
+      </div>
 
-        <div class="copy_right text-center">
-            Copyright <span> Ali Barakat</span> &copy; 2024
-        </div>
+      <div class="copy_right text-center">
+        <p class="mb-0">
+          Copyright<span class="mx-2">Ali Barakat</span> &copy; 2024
+        </p>
+      </div>
     </footer>
-
-
 
     <!-- scroll -->
     <div id="scroll-top">
-        <i class="lni lni-chevron-up"></i>
+      <i class="lni lni-chevron-up"></i>
     </div>
-    <!-- end -->
+    <!-- end scroll -->
 
-    <!-- Library jquary  -->
+    <!-- Library jquary-->
     <script src="js/jquery-3.7.0.js"></script>
 
-
     <script src="js/main.js"></script>
-
-</body>
-
+  </body>
 </html>
