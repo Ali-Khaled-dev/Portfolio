@@ -4,7 +4,7 @@ $(function () {
   // display none for loading page
 
   setTimeout(function () {
-    document.querySelector(".preloader").classList.add("d-none");
+    $(".preloader").addClass("d-none");
   }, 3000);
 
   // Scroll Page for click navBar
@@ -12,7 +12,7 @@ $(function () {
   $("nav li a").click(function () {
     $("html, body").animate(
       {
-        scrollTop: $("#" + $(this).data("scroll")).offset().top,
+        scrollTop: $("#" + $(this).data("scroll")).offset().top - 80,
       },
       100
     );
@@ -25,25 +25,23 @@ $(function () {
     $(this).addClass("active");
   });
 
-  $(window).scroll(function () {
-    // Synchronization of links with the site
+  // Synchronization of links with the site
 
+  $(window).scroll(function () {
     $(".block").each(function () {
-      if ($(window).scrollTop() >= $(this).offset().top - 10) {
+      if ($(window).scrollTop() >= $(this).offset().top - 80) {
         $("nav li a").removeClass("active");
         var blocID = $(this).attr("id");
         $('nav li a[data-scroll="' + blocID + '"]').addClass("active");
       }
     });
-
-    // Back to top button show/hide
-
-    $(window).scrollTop() >= 300
-      ? scroolbottoun.fadeIn(200)
-      : scroolbottoun.fadeOut(200);
-
-    // animate num skills
   });
+
+  // Back to top button show/hide
+
+  $(window).scrollTop() >= 300
+    ? scroolbottoun.fadeIn(200)
+    : scroolbottoun.fadeOut(200);
 
   scroolbottoun.click(function () {
     $("html, body").animate({ scrollTop: 0 }, 800);
@@ -82,15 +80,29 @@ $(function () {
     hundlemenue();
   });
 
-  // animate progress bar for skills section
-  $(".progress .progress-bar").each(function () {
-    if (window.scrollY >= $this.offset().top - $(window).highet()) {
-      $this.animate(
-        {
-          width: $(this).attr("data-width") + "%",
-        },
-        5000
-      );
-    }
+
+
+  $(window).on("scroll", function () {
+    $(".progress .progress-bar").each(function () {
+      var $this = $(this);
+
+     
+      if (!$this.hasClass("animated") && $this.width() === 0) {
+    
+        if (window.scrollY + $(window).height() >= $this.offset().top) {
+      
+          $this.animate(
+            {
+              width: $this.attr("data-width") + "%",
+            },
+            5000,
+            function () {
+           
+              $this.addClass("animated");
+            }
+          );
+        }
+      }
+    });
   });
 });
